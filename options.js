@@ -1,5 +1,7 @@
+var storageArea = chrome.storage.local;
+
 function onLoad(){
-  chrome.storage.sync.get({
+  storageArea.get({
     token: ''
   }, function(items) {
     var token_input = document.getElementById('token');
@@ -9,7 +11,7 @@ function onLoad(){
 
 function persistToken(){
   var token_input = document.getElementById('token');
-  chrome.storage.sync.set({
+  storageArea.set({
     token: token_input.value
   }, function(){
     var status = document.getElementById('status');
