@@ -2,7 +2,7 @@ var storageArea = chrome.storage.local;
 
 var YOUTRACK_URL = "https://youtrack.jetbrains.com";
 var ISSUE_ROUTE = YOUTRACK_URL + "/rest/issue";
-var YOUTRACK_PROJECT = "PYMKT";
+var YOUTRACK_PROJECT = "CPRTINF";
 
 function basicNotify(message){
   chrome.notifications.create(null, {
