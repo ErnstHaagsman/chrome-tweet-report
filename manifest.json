@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Tweet Report to YouTrack",
+  "version": "0.1",
+  "permissions": [
+    "contextMenus"
+  ],
+  "background": {
+    "scripts": [
+      "tweet-to-yt.js"
+    ]
+  },
+  "icons": {
+    "16": "youtrack-16.png"
+  }
+}
