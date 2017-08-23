@@ -3,7 +3,8 @@
   "name": "Tweet Report to YouTrack",
   "version": "0.1",
   "permissions": [
-    "contextMenus"
+    "contextMenus",
+    "storage"
   ],
   "background": {
     "scripts": [
@@ -12,5 +13,10 @@
   },
   "icons": {
     "16": "youtrack-16.png"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true,
+    "open_in_tab": false
   }
 }

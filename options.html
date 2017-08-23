@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report Tweet to YouTrack Options</title>
+</head>
+<body>
+
+<h1>Configure Extension</h1>
+
+<p>To use the extension, a permanent token is needed from Hub. To get this token:</p>
+
+<ul>
+    <li>Go to <a href="https://hub.jetbrains.com">Hub</a></li>
+    <li>Click your profile picture in the top-right, and select "Profile"</li>
+    <li>Go to the 'Authentication' tab</li>
+    <li>Click 'Create token'</li>
+    <li>Make sure to add 'YouTrack' to the scopes</li>
+    <li>Click 'Create' and paste below:</li>
+</ul>
+
+<form action="#">
+    <input type="text" name="token" id="token">
+    <input type="button" name="save" id="save" value="Save">
+</form>
+
+<div id="status">
+
+</div>
+
+<script src="options.js"></script>
+
+</body>
+</html>
