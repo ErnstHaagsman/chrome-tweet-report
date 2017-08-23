@@ -4,7 +4,8 @@
   "version": "0.1",
   "permissions": [
     "contextMenus",
-    "storage"
+    "storage",
+    "https://youtrack.jetbrains.com/"
   ],
   "background": {
     "scripts": [
