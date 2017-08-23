@@ -5,7 +5,8 @@
   "permissions": [
     "contextMenus",
     "storage",
-    "https://youtrack.jetbrains.com/"
+    "https://youtrack.jetbrains.com/",
+    "notifications"
   ],
   "background": {
     "scripts": [
