@@ -31,7 +31,7 @@ function reportTweet(info, tab){
     // this is in the URL: https://twitter.com/<username>/status/<status_id>
     // So the third element of the URL split by '/' should be the username
     twitter_user = linkUrl.split("/")[3];
-    var ticket_title = "PyCharm Twitter " + twitter_user;
+    var ticket_title = "Twitter " + twitter_user;
 
     var ticket_description = linkUrl;
 
@@ -82,8 +82,6 @@ function reportTweet(info, tab){
 
 function undoReport(issue_id){
   storageArea.get('token', function(items){
-    // According to the YouTrack API docs, it only accepts the ticket data
-    // as GET style URL parameters. So we'll need to encode these
     var url = ISSUE_ROUTE + "/" + issue_id;
 
     var deleteTicketRequest = new XMLHttpRequest();
