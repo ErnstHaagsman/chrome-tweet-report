@@ -14,10 +14,23 @@ function basicNotify(message){
 }
 
 // Apparently event listeners for notifications are a global thing.
+// We're using the YouTrack Ticket ID as the notification ID
 chrome.notifications.onButtonClicked.addListener(handleSuccessNotification);
 function handleSuccessNotification(ticketID, button_index){
   // The only button is undo, so undo
   undoReport(ticketID);
+}
+
+chrome.notifications.onClicked.addListener(handleOnClicked);
+function handleOnClicked(ticketID) {
+  openTicket(ticketID);
+}
+
+function openTicket(ticketID) {
+  var url = YOUTRACK_URL + "/issue/" + ticketID;
+  chrome.tabs.create({
+    url: url
+  });
 }
 
 function reportTweet(info, tab){
